@@ -20,21 +20,26 @@ Tecnologias usadas na aplicação:
 [Node.js](https://nodejs.org/) v16+.
 
 ```sh
-git clone 
+git clone https://github.com/Robertotheto/ignite-lab-01.git
+
+cd ignite-lab-01
+
+docker-compose up -d
+
+cd purchases
 npm i
-node app
+npm run start:dev
+
+cd classroom
+npm i
+npm run start:dev
+
+cd gateway
+npm i
+npm run start:dev
+
 ```
-
-
-## Docker
-
-```sh
-docker run -d -p 8000:8080 --restart=always --cap-add=SYS_ADMIN --name=dillinger <youruser>/dillinger:${package.json.version}
-```
-
 
 ## License
 
 MIT
-
-**Free Software, Hell Yeah!**
